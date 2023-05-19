@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Wynter Detailing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Services</a></li>
+                <li><a href="#services">Pricing</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <a href="#contact" class="btn btn3">Book Now!</a>
+            <h1><span>#1 Car Detailing</span><br>Servicing Sunshine Coast</h1>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Pricing</h1>
+        <div class="services-list">
+            <div>
+                <h2><a href="#about">Full Detail</a></h2>
+                <p>$140-$160</p>
+                <a href="#"></a>
+            </div>
+            <div>
+                <h2><a href="#about">Basic Detail</a></h2>
+                <p>$100-$120</p>
+                <a href="#"></a>
+            </div>
+            <div>
+                <h2>Extras</h2>
+                <p>$ varies</p>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+        </div>
+        <div class="about-col-1">
+            <h1 class="sub-title">Services</h1>
+            <p></p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Full Detail</p>
+                <p class="tab-links" onclick="opentab('experience')">Basic Detail</p>
+                <p class="tab-links" onclick="opentab('education')">Extras</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Interior</span><br><br>⁍Thorough vacuuming/air pressurised blow-out of carpets, seats, and upholstery<br>⁍Dashboard and console cleaning and protection<br>⁍Door panel and trim cleaning<br>⁍Interior glass cleaning<br>⁍Odor elimination<br><br></li>
+                    <li><span>Exterior</span><br>⁍Hand wash and dry<br>⁍Tire and wheel cleaning<br>⁍Wheel well cleaning<br>⁍Tire Shine<br><br></r></li>
+                    <li><span></span><br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Interior</span><br>⁍Vacuum<br>⁍Glass cleaning<br><br></li>
+                    <li><span>Exterior</span><br>⁍Wash</li>
+                    <li><span></span><br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Optional</span><br>⁍Headlight Restoration $30<br>⁍Special requests $10-$100</li>
+                    <li><span></span><br></li>
+                    <li><span></span><br></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="gallery">
+    <div class="container">
+        <h1 class="sub-title">Gallery</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/2007_Lexus_IS250.png" alt="2007 Lexus IS250 - Full Detail + Headlight Restoration">
+                <div class="layer">
+                    <h3>Full Detail + Headlight Restoration</h3>
+                    <p>2007 Lexus IS250</p>
+                </div>
+            </div>    
+            <div class="work">    
+                <img src="images/2011_Mercedes_e250.jpg" alt="2011 Mercedes e250 - Full Detail + Headlight Restoration">
+                <div class="layer">
+                    <h3>Full Detail + Headlight Restoration</h3>
+                    <p>2011 Mercedes e250</p>
+                </div>        
+            </div>
+            <div class="work">    
+                <img src="images/Mitsubishi_Pajero_Sport.jpg" alt="Mitsubishi Pajero Sport - Full Detail">
+                <div class="layer">
+                    <h3>Full Detail</h3>
+                    <p>Mitsubishi Pajero Sport</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p<i class="fa-solid fa-paper-plane"></i>>johnwynter55893@outlook.com</p>
+                <p<i class="fa-solid fa-phone"></i>>0447194347</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Please write here the detailing package, address, vehicle make/model, and any additional info. Once we recieve this information we will work with you to organise a suitable date and time. Thank you!"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";    
+    }
+
+</script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzBwNBFihY33S8PF8tFe-PX6FMlMPqgVLaTK9yNXMKk0vuejaz2KUPL91uydSQHokW6Tw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
